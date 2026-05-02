@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Home | Atención al Cliente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <nav class="nav-bar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="../img/LOGO.png" alt="Huellitas Logo">
+                </div> 
+                <div class="logo-text">
+                    <span class="logo-title">Huellitas</span>
+                    <span class="logo-subtitle">Home</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../Inicio.html">Inicio</a></li>
+                <li><a href="../Contacto.html">Volver a Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="reserva-cita">
+        <div class="container">
+            <h2>Atención al Cliente</h2>
+            <div class="reserva-box">
+                <form id="formAtencion">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <select name="tipoConsulta" required>
+                        <option value="">Tipo de consulta</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="problema">Problema técnico</option>
+                        <option value="queja">Queja</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                    <textarea name="mensaje" placeholder="Describe tu consulta o problema" rows="5" required></textarea>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+document.getElementById('formAtencion').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = this.nombre.value.trim();
+    const email = this.email.value.trim();
+    const tipoConsulta = this.tipoConsulta.value;
+    const mensaje = this.mensaje.value.trim();
+    
+    if (!nombre || !email || !tipoConsulta || !mensaje) {
+        alert('Por favor, completa todos los campos.');
+        return;
+    }
+    
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert('Por favor, ingresa un correo electrónico válido.');
+        return;
+    }
+    
+    alert('Consulta enviada exitosamente. Te responderemos pronto.');
+    this.reset();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Home | Formulario de Comentarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <nav class="nav-bar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="../img/LOGO.png" alt="Huellitas Logo">
+                </div> 
+                <div class="logo-text">
+                    <span class="logo-title">Huellitas</span>
+                    <span class="logo-subtitle">Home</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../Inicio.html">Inicio</a></li>
+                <li><a href="../Contacto.html">Volver a Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="reserva-cita">
+        <div class="container">
+            <h2>Formulario de Comentarios</h2>
+            <div class="reserva-box">
+                <form id="formComentarios">
+                    <input type="text" name="nombre" placeholder="Nombre del usuario" required>
+                    <textarea name="comentario" placeholder="Tu comentario" rows="5" required></textarea>
+                    <select name="calificacion">
+                        <option value="">Calificación (opcional)</option>
+                        <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                        <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+                        <option value="3">⭐⭐⭐ Bueno</option>
+                        <option value="2">⭐⭐ Regular</option>
+                        <option value="1">⭐ Malo</option>
+                    </select>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+document.getElementById('formComentarios').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = this.nombre.value.trim();
+    const comentario = this.comentario.value.trim();
+    
+    if (!nombre || !comentario) {
+        alert('Por favor, completa nombre y comentario.');
+        return;
+    }
+    
+    alert('Comentario enviado exitosamente. ¡Gracias por tu opinión!');
+    this.reset();
+});
+</script>
+
+</body>
+</html>
