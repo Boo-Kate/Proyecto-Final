@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Productos | Huellitas Home</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+<!-- HEADER IGUAL A ATENCIÓN VETERINARIA -->
+<header class="header">
+    <div class="header-container">
+        <nav class="nav-bar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="img/LOGO.png" alt="Huellitas Logo">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Huellitas</span>
+                    <span class="logo-subtitle">Home</span>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar productos...">
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="AtencionVeterinaria.html">Veterinaria</a></li>
+                <li><a href="Productos.html" class="active">Productos</a></li>
+                <li><a href="Adopcion.html">Adopción</a></li>
+                <li><a href="NuestraHistoria.html">Sobre Nosotros</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="Contacto.html" class="btn-contacto-dark">Contacto</a>
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-mini">
+    <h1>Productos para todos los animales 🐾</h1>
+    <p>Todo lo que tu mascota necesita en un solo lugar</p>
+</section>
+
+<div class="layout">
+
+<!-- PRODUCTOS -->
+<section class="contenido">
+
+    <!-- PERROS -->
+    <section class="seccion">
+        <h2>🐶 Perros</h2>
+
+        <div class="grid-mini">
+
+            <div class="prod">
+                <img src="img/comida.png">
+                <h3>Alimento Premium</h3>
+                <p>$20</p>
+                <button onclick="agregar('Alimento Perro',20)">Agregar</button>
+            </div>
+
+            <div class="prod">
+                <img src="img/mordedor.png">
+                <h3>Juguete Mordedor</h3>
+                <p>$12</p>
+                <button onclick="agregar('Juguete Perro',12)">Agregar</button>
+            </div>
+
+            <div class="prod">
+                <img src="img/collar.png">
+                <h3>Collar Seguro</h3>
+                <p>$10</p>
+                <button onclick="agregar('Collar',10)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GATOS -->
+    <section class="seccion">
+        <h2>🐱 Gatos</h2>
+
+        <div class="grid-mini">
+
+            <div class="prod">
+                <img src="img/comida gato.jpeg">
+                <h3>Comida Premium</h3>
+                <p>$18</p>
+                <button onclick="agregar('Comida Gato',18)">Agregar</button>
+            </div>
+
+            <div class="prod">
+                <img src="img/rascador gato.png">
+                <h3>Rascador</h3>
+                <p>$25</p>
+                <button onclick="agregar('Rascador',25)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AVES -->
+    <section class="seccion">
+        <h2>🐦 Aves</h2>
+
+        <div class="grid-mini">
+
+            <div class="prod">
+                <img src="img/semilla aves.jpeg">
+                <h3>Semillas Naturales</h3>
+                <p>$10</p>
+                <button onclick="agregar('Semillas Aves',10)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PECES -->
+    <section class="seccion">
+        <h2>🐠 Peces</h2>
+
+        <div class="grid-mini">
+
+            <div class="prod">
+                <img src="img/comida peces.jpeg">
+                <h3>Alimento Peces</h3>
+                <p>$8</p>
+                <button onclick="agregar('Peces',8)">Agregar</button>
+            </div>
+
+            <div class="prod">
+                <img src="img/acuario.jpeg">
+                <h3>Acuario Decorativo</h3>
+                <p>$40</p>
+                <button onclick="agregar('Acuario',40)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OTROS -->
+    <section class="seccion">
+        <h2>🐾 Otros Animales</h2>
+
+        <div class="grid-mini">
+
+            <div class="prod">
+                <img src="img/heno conejos.jpeg">
+                <h3>Heno Conejos</h3>
+                <p>$12</p>
+                <button onclick="agregar('Heno',12)">Agregar</button>
+            </div>
+
+            <div class="prod">
+                <img src="img/cama.png">
+                <h3>Cama Universal</h3>
+                <p>$30</p>
+                <button onclick="agregar('Cama',30)">Agregar</button>
+            </div>
+
+            <div class="prod">
+                <img src="img/kit.jpeg">
+                <h3>Kit de Higiene</h3>
+                <p>$15</p>
+                <button onclick="agregar('Higiene',15)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+</section>
+
+<!-- CARRITO -->
+<aside class="cart">
+
+    <h3>🛒 Carrito</h3>
+    <ul id="lista"></ul>
+    <p id="total">Total: $0</p>
+
+    <button class="btn-compra" onclick="comprar()">Finalizar compra</button>
+    <button onclick="vaciar()">Vaciar carrito</button>
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>Huellitas Home © 2026 | Diseñado con amor para los peluditos 🐾</p>
+    </div>
+</footer>
+
+<script>
+
+let carrito = [];
+
+function agregar(nombre, precio){
+    carrito.push({nombre, precio});
+    render();
+}
+
+function render(){
+    let lista = document.getElementById("lista");
+    let total = document.getElementById("total");
+
+    lista.innerHTML = "";
+    let sum = 0;
+
+    carrito.forEach(p=>{
+        let li = document.createElement("li");
+        li.textContent = p.nombre + " - $" + p.precio;
+        lista.appendChild(li);
+        sum += p.precio;
+    });
+
+    total.innerText = "Total: $" + sum;
+}
+
+function vaciar(){
+    carrito = [];
+    render();
+}
+
+function comprar(){
+    if(carrito.length === 0){
+        alert("Carrito vacío 🐾");
+        return;
+    }
+
+    alert("Compra realizada con éxito 🐾 Gracias por confiar en Huellitas Home");
+    carrito = [];
+    render();
+}
+
+</script>
+
+</body>
+</html>

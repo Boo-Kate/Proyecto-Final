@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Home | Contacto</title>
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<!-- Redes Sociales Flotantes -->
+<div class="social-aside">
+    <a href="#" class="s-icon fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="s-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="s-icon wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<header class="header">
+    <div class="header-container">
+        <nav class="nav-bar">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="img/LOGO.png" alt="Huellitas Logo">
+                </div> 
+                <div class="logo-text">
+                    <span class="logo-title">Huellitas</span>
+                    <span class="logo-subtitle">Home</span>
+                </div>
+            </div>
+
+            <!-- Buscador Funcional -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="mainSearch" placeholder="Buscar amigos o productos...">
+            </div>
+
+            <!-- Menú de Navegación -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="AtencionVeterinaria.html">AtencionVeterinaria</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Adopcion.html">Adopción</a></li>
+                <li><a href="NuestraHistoria.html">Sobre Nosotros</a></li>
+            </ul>
+
+            <!-- Acción de Contacto -->
+            <div class="header-actions">
+                <a href="Contacto.html" class="btn-contacto-dark">Contacto</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-container container">
+                <div class="hero-text">
+                    <h1>¡Contáctanos! 🐾</h1>
+                    <h4>Tu opinión y consultas son importantes para nosotros</h4>
+                    <p>Completa cualquiera de nuestros formularios y te responderemos pronto.</p>
+                </div>
+                <div class="hero-img">
+                    <img src="img/ANIMALS.png" alt="Mascotas Felices">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE INFORMACIÓN DE CONTACTO -->
+    <section class="contact-info-section container">
+        <h2>Información de Contacto</h2>
+        <div class="contact-info-grid">
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Ubicación</h3>
+                <p>Centro de Mascotas<br>Calle Principal 456<br>Managua, Nicaragua</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <h3>Teléfono</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Email</h3>
+                <p>contacto@huellitashome.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MAPA -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Encuéntranos en el Mapa</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.987654321!2d-86.236174!3d12.114992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f711f1234567890%3A0x123456789abcdef!2sCentro%20de%20Mascotas%2C%20Calle%20Principal%20456%2C%20Managua%2C%20Nicaragua!5e0!3m2!1ses!2sus!4v1634567890123!5m2!1ses!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE FORMULARIOS -->
+    <section class="formularios-section container">
+        <h2>Nuestros Formularios de Contacto</h2>
+        
+        <!-- Formulario de Contacto -->
+        <div class="formulario-container">
+            <div class="form-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Formulario de Contacto</h3>
+            <p>Incluye campos como nombre, correo electrónico y mensaje, con validación del lado del cliente.</p>
+            <div class="reserva-box">
+                <form id="formContacto">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Formulario de Comentarios -->
+        <div class="formulario-container">
+            <div class="form-icon"><i class="fas fa-comments"></i></div>
+            <h3>Formulario de Comentarios</h3>
+            <p>Ofrece campos para el nombre del usuario, comentario y calificación opcional.</p>
+            <div class="reserva-box">
+                <form id="formComentarios">
+                    <input type="text" name="nombre" placeholder="Nombre del usuario" required>
+                    <textarea name="comentario" placeholder="Tu comentario" rows="5" required></textarea>
+                    <select name="calificacion">
+                        <option value="">Calificación (opcional)</option>
+                        <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                        <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+                        <option value="3">⭐⭐⭐ Bueno</option>
+                        <option value="2">⭐⭐⭐ Regular</option>
+                        <option value="1">⭐ Malo</option>
+                    </select>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Formulario de Atención al Cliente -->
+        <div class="formulario-container">
+            <div class="form-icon"><i class="fas fa-headset"></i></div>
+            <h3>Formulario de Atención al Cliente</h3>
+            <p>Formulario dedicado a la atención al cliente para consultas y problemas de usuarios.</p>
+            <div class="reserva-box">
+                <form id="formAtencion">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <select name="tipoConsulta" required>
+                        <option value="">Tipo de consulta</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="problema">Problema técnico</option>
+                        <option value="queja">Queja</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                    <textarea name="mensaje" placeholder="Describe tu consulta o problema" rows="5" required></textarea>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2023 Huellitas Home. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/javascript.js"></script>
+
+<script>
+// Validación Formulario de Contacto
+document.getElementById('formContacto').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = this.nombre.value.trim();
+    const email = this.email.value.trim();
+    const mensaje = this.mensaje.value.trim();
+    
+    if (!nombre || !email || !mensaje) {
+        alert('Por favor, completa todos los campos.');
+        return;
+    }
+    
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert('Por favor, ingresa un correo electrónico válido.');
+        return;
+    }
+    
+    alert('Mensaje enviado exitosamente. ¡Gracias por contactarnos!');
+    this.reset();
+});
+
+// Validación Formulario de Comentarios
+document.getElementById('formComentarios').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = this.nombre.value.trim();
+    const comentario = this.comentario.value.trim();
+    
+    if (!nombre || !comentario) {
+        alert('Por favor, completa nombre y comentario.');
+        return;
+    }
+    
+    alert('Comentario enviado exitosamente. ¡Gracias por tu opinión!');
+    this.reset();
+});
+
+// Validación Formulario de Atención al Cliente
+document.getElementById('formAtencion').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = this.nombre.value.trim();
+    const email = this.email.value.trim();
+    const tipoConsulta = this.tipoConsulta.value;
+    const mensaje = this.mensaje.value.trim();
+    
+    if (!nombre || !email || !tipoConsulta || !mensaje) {
+        alert('Por favor, completa todos los campos.');
+        return;
+    }
+    
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert('Por favor, ingresa un correo electrónico válido.');
+        return;
+    }
+    
+    alert('Consulta enviada exitosamente. Te responderemos pronto.');
+    this.reset();
+});
+</script>
+
+</body>
+</html>

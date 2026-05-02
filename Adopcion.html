@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adopción | Huellitas Home</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER IGUAL A LAS DEMÁS -->
+<header class="header">
+    <div class="header-container">
+        <nav class="nav-bar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="img/LOGO.png" alt="Huellitas Logo">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Huellitas</span>
+                    <span class="logo-subtitle">Home</span>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar mascotas...">
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="AtencionVeterinaria.html">Veterinaria</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Adopcion.html" class="active">Adopción</a></li>
+                <li><a href="NuestraHistoria.html">Sobre Nosotros</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="Contacto.html" class="btn-contacto-dark">Contacto</a>
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-mini">
+    <h1>Adopta un amigo 🐾</h1>
+    <p>Ellos solo necesitan amor y un hogar</p>
+</section>
+
+<!-- ANIMALES EN ADOPCIÓN -->
+<section class="adopcion-section container">
+
+    <h2>Mascotas disponibles</h2>
+
+    <div class="photo-lane">
+
+        <div class="pet">
+            <img src="img/max.png" alt="Perro Max">
+            <h3>Max</h3>
+            <p>2 años • Energético</p>
+            <button onclick="adoptar('Max')">Adoptar</button>
+        </div>
+
+        <div class="pet">
+            <img src="img/gatito.jpeg" alt="Gata Luna">
+            <h3>Luna</h3>
+            <p>1 año • Tranquila</p>
+            <button onclick="adoptar('Luna')">Adoptar</button>
+        </div>
+
+        <div class="pet">
+            <img src="img/conejo.jpeg" alt="Conejo Rocky">
+            <h3>Rocky</h3>
+            <p>6 meses • Conejo juguetón</p>
+            <button onclick="adoptar('Rocky')">Adoptar</button>
+        </div>
+
+        <div class="pet">
+            <img src="img/loro.jpeg" alt="Loro Kiwi">
+            <h3>Kiwi</h3>
+            <p>3 años • Loro hablador</p>
+            <button onclick="adoptar('Kiwi')">Adoptar</button>
+        </div>
+
+        <div class="pet">
+            <img src="img/peces.jpeg" alt="Pez Azul">
+            <h3>Azul</h3>
+            <p>1 año • Pez tropical</p>
+            <button onclick="adoptar('Azul')">Adoptar</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- REQUISITOS -->
+<section class="info-extra">
+
+    <div class="container info-grid">
+
+        <div class="info-card">
+            <h3>📋 Requisitos</h3>
+            <p>Ser mayor de edad y tener compromiso con la mascota.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🏠 Hogar responsable</h3>
+            <p>Un espacio seguro y adecuado para el animal.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>❤️ Amor y cuidado</h3>
+            <p>Compromiso de darle atención y cariño diario.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📞 Seguimiento</h3>
+            <p>Se realiza seguimiento para garantizar su bienestar.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UBICACIÓN -->
+<section class="hero-mini">
+
+    <h2>📍 Estamos en Nicaragua</h2>
+    <p>Managua, La Argentina — Huellitas Home Centro de Adopción</p>
+
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+<section class="faq container">
+
+    <h2>❓ Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+        <h3>¿Es gratis adoptar?</h3>
+        <p>Sí, la adopción es completamente gratuita.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>¿Puedo devolver la mascota?</h3>
+        <p>No, solo adopta si estás seguro del compromiso.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>¿Qué pasa después de adoptar?</h3>
+        <p>Se realiza seguimiento para asegurar el bienestar del animal.</p>
+    </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>Huellitas Home © 2026 | Diseñado con amor para los peluditos 🐾</p>
+    </div>
+</footer>
+
+<script>
+
+function adoptar(nombre){
+    alert("🐾 Has iniciado el proceso de adopción de " + nombre + ". Nos contactaremos contigo pronto.");
+}
+
+</script>
+
+</body>
+</html>
